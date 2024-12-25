@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Advanced Tab and IFrame Blocker
-// @namespace    https://github.com/elstrom/BlokerWeb
+// @namespace    https://github.com/elstrom/AdvancedTabIFrameBlocker
 // @version      1.8
 // @description  Blokir situs blacklist pada tab baru, iframe, dan navigasi langsung dari elemen mencurigakan.
 // @author       Elstrom
@@ -8,7 +8,7 @@
 // @exclude      *api.github*
 // @match        *://*/*
 // @grant        none
-// @supportURL   https://raw.githubusercontent.com/elstrom/BlokerWeb
+// @supportURL   https://raw.githubusercontent.com/elstrom/AdvancedTabIFrameBlocker
 // @updateURL    https://raw.githubusercontent.com/elstrom/AdvancedTabIFrameBlocker/main/AdvancedTabIFrameBlocker.user.js
 // @downloadURL  https://raw.githubusercontent.com/elstrom/AdvancedTabIFrameBlocker/main/AdvancedTabIFrameBlocker.user.js
 // ==/UserScript==
