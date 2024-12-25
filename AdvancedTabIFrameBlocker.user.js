@@ -1,43 +1,145 @@
 // ==UserScript==
 // @name         Advanced Tab and IFrame Blocker
-// @namespace    http://tampermonkey.net/
+// @namespace    https://github.com/elstrom/BlokerWeb
 // @version      1.8
 // @description  Blokir situs blacklist pada tab baru, iframe, dan navigasi langsung dari elemen mencurigakan.
 // @author       Elstrom
+// @include      *github.com*
+// @exclude      *api.github*
 // @match        *://*/*
 // @grant        none
-// @updateURL    https://raw.githubusercontent.com/yourusername/AdvancedTabIFrameBlocker/main/AdvancedTabIFrameBlocker.user.js
-// @downloadURL  https://raw.githubusercontent.com/yourusername/AdvancedTabIFrameBlocker/main/AdvancedTabIFrameBlocker.user.js
+// @supportURL   https://raw.githubusercontent.com/elstrom/BlokerWeb
+// @updateURL    https://raw.githubusercontent.com/elstrom/AdvancedTabIFrameBlocker/main/AdvancedTabIFrameBlocker.user.js
+// @downloadURL  https://raw.githubusercontent.com/elstrom/AdvancedTabIFrameBlocker/main/AdvancedTabIFrameBlocker.user.js
 // ==/UserScript==
 
 (function () {
     'use strict';
 
     const weblack = [
-        "enrtx.com",
+        "enrtx",
+
         "kelas2.guru",
+
         "meenetiy.com",
+
         "rajapg10.site",
-        "mordoops.com",
+
+        "mordoops",
+
         "s.shopee.co.id",
+
+        "mp4k.pro",
+
+        "kotra.id",
+
+        "cps.cotecna.com",
+
+        "s.viisscos.com",
+
+        "irispublishers.com",
+
+        "dpu.brebeskab.go.id",
+        
+        "orantesjonnock.",
+
+        "online.sim.pktj.ac.id",
+
+        "meenetiy",
+
+        "fmars.marssociety.org",
+
+        "851849.visualmirage.co",
+
+        "visualmirage",
+
+        "fmars.marssociety.org",
+
+        "bocoran",
+
+        "kikojogja.com",
+
+        "www.24newstech.com",
+
+        "d3h0vqwmcilum.cloudfront.net",
+
         "d37nij3w7aewur.cloudfront.net",
+
+        "cloudfront",
+
+        "label138p.xyz",
+
         "tokopedia.com",
+
         "shopee.co.id",
+
         "lazada.co.id",
+
         "blibli.com",
+
         "bukalapak.com",
+
         "amazon.com",
+
         "ebay.com",
+
         "alibaba.com",
+
         "aliexpress.com",
+
         "jd.com",
+
         "olx.co.id",
+
         "casino",
+
         "judi",
+
         "poker",
+
         "bet",
+
         "slot",
-        "roulette"
+
+        "roulette",
+
+        "togel",
+
+        "sbobet",
+
+        "qq",
+
+        "dingdong",
+
+        "dominoqq",
+
+        "bandarq",
+
+        "aduq",
+
+        "capsa",
+
+        "baccarat",
+
+        "blackjack",
+
+        "jackpot",
+
+        "maxwin",
+
+        "slot88",
+
+        "slotgacor",
+
+        "pragmaticplay",
+
+        "taruhan",
+
+        "agenbola",
+
+        "judibola",
+
+        "judionline"
     ];
 
     const isBlacklisted = (url) => {
